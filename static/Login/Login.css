@@ -1,0 +1,98 @@
+*{
+    user-select: none;
+}
+
+body{
+    background-image: url("../HT.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.login{
+    position: absolute;
+    top: 50%;
+    margin-top: -200px;
+    left: 50%;
+    margin-left: -200px;
+    background-color: whitesmoke;
+    width: 400px;
+    height: 400px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 5px 40px;
+    box-sizing: border-box;
+}
+
+.home_link{
+    margin-right: 10px;
+    font-size: 20px;
+    color: #ffca2a; 
+}
+
+.login_1{
+    position: absolute;
+    top: 50%;
+    margin-top: -200px;
+    left: 50%;
+    margin-left: -200px;
+    background-color: whitesmoke;
+    width: 400px;
+    height: 400px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 5px 40px;
+    box-sizing: border-box;
+}
+
+p.title{
+    font-size: 48px;
+    font-weight: 600;
+    margin-top: 10%;
+    margin-bottom: 0%;
+}
+
+input{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 20%;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid silver;
+    outline: none;
+    font-size: 22px;
+
+}
+
+.container {
+    display: flex;
+    justify-self: center;
+}
+.btn{
+    background-color: #59c2c5;
+    width:38%;
+    height:  48px;
+    border-radius: 8%;
+    margin-top: 40px;
+    margin-left: 100px;
+    font-size: 28px;
+    font-weight: 600;
+    color:white
+}
+.btn:hover{
+    background-color: #4fabaf;
+}
+.register{
+    background-color: #c1c1c1;
+    width:19%;
+    height:  28px;
+    border-radius: 8%;
+    margin-top: 60px;
+    margin-left: 50px;
+    font-size: 19px;
+    font-weight: 400;
+    color:white
+    
+}
+.register:hover{
+    background-color: #49b3c6;
+}
