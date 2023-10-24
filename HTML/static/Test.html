@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>个人网站</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Test_S.css">
+</head>
+
+<body>
+    <h1>个人网站</h1>
+    <div class = "navigation">
+        <a href="#" class="home_link" onclick="OpenMainWeb()">首页</a>
+        <a href="#" class="home_link" onclick="OpenHelpWeb()">帮助</a>
+        <a href="#" class="home_link" id="FixButton" onclick="FixBackGround()">切换背景1</a>
+    </div>
+    <div class = "lnavigation">
+        <a href="#" class="home_link" id="Login" onclick="Login()">登录</a>
+    </div>
+    <div class="container">
+        <div class="left">
+            <p class="description">
+                (暂时未做颜色适配，看不清字可尝试切换背景图片↑) <br>
+                (由于时间问题，该网站暂不进行后续UI开发)<br>
+                (如果您需要浏览或使用该网页，请发送邮件至<br>
+                邮箱:c1143670985@163.com)<br>
+                功能1：发送文字至服务器 <br>
+                功能2：浏览并上传文件至服务器端 <br>
+                功能3：点击“查看下载列表”从服务器端下载文件。<br>
+            </p>
+            <div style="border: 2px solid #0091ff;">
+                <p class="Title_Level2">意见反馈</p>
+            <input type="text" id="UserNameInput" class="input-text" placeholder="用户名（可选）"><br>
+            <textarea type="text" id="textInput" class="input-text" placeholder="在此处输入并发送文字，可上传并保存至服务器(注：发送消息时避免包括字符串“-AAAAA-”)"></textarea>
+            <button onclick="sendText()">发送文字</button>
+            <div id="output_text"></div>
+            </div>
+             </div>
+            <div class="right">
+            <div style="border:2px solid #0091ff;">
+                <p class="Title_Level2">上传文件</p>
+            <input type="file" class="btn_upload" id="fileInput">
+            <button class="btn_upload" onclick="uploadFile()">上传文件</button>
+            <br>
+            <br>
+            <br> 
+           </div>
+           <div style="border:2px solid #0091ff;">
+            <p class="Title_Level2">下载文件</p>
+            <a class="DownloadList" href="#" onclick="getDownloadList()">点击查看下载列表</a>
+            <div id="output"></div>
+           </div>
+        </div>
+    </div>
+
+    <footer class="bottom">
+        <p class="©">版权所有 © 2023 (^o^)/</p>
+    </footer>
+
+    <script src="Test_JS.js"></script>
+</body>
+
+</html>

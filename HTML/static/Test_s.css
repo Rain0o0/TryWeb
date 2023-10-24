@@ -1,0 +1,90 @@
+body {
+    background-image: url("HT.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    flex: 1;
+}
+
+.bottom{
+    position: absolute;
+    bottom: 0;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    color: #fff; /* 修改为白色 */
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+
+p.description {
+    font-size: 20px;
+    color: #ffca2a;
+}
+
+p.© {
+    font-size: 10px;
+    color: #ffca2a;
+}
+
+textarea.input-text {
+    width: 300px;
+    resize: none;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+div.navigation{
+    position: absolute; 
+    left: 10px; 
+    top: 10px;
+}
+div.lnavigation{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.home_link{
+    margin-right: 10px;
+    font-size: 20px;
+    color: #ffca2a; 
+}
+
+.DownloadList:link {
+    font-size: 20px;
+    color: #ffd000
+  }
+.DownloadList:visited{
+    font-size: 20px;
+    color: #fff8dd; 
+}
+
+.Title_Level2{
+    font-size: 22px;
+    color: #ffc342;
+    font-weight:bold;
+}
+
+button.btn_upload{
+    width: 100px;
+    height: 50px;
+}
+
+input.btn_upload{
+    width: 200px;
+    height: 30px;
+}

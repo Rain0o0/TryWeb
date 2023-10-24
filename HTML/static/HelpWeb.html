@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>帮助文档</title>
+    <style>
+        body {
+            background-color: darkorchid;
+        }
+
+        .animated-circle {
+            width: 100px;
+            height: 100px;
+            border: 4px solid gray;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.3);
+            position: absolute;
+            animation-name: rise-animation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            z-index: -2;
+        }
+
+        @keyframes rise-animation {
+            0% {
+                transform: translateY(100%);
+            }
+            100% {
+                transform: translateY(-700%);
+            }
+        }
+    </style>
+</head>
+<body>
+        <a style="font-size: 20px; margin: 10px;color:aqua;background-color: rgba(0, 255, 255, 0.2);">
+            2023/10/16 完成登录页面所有功能<br>
+
+            2023/10/8 完成注册模块页面及功能，并连接至mysql<br>
+
+            2023/10/5 完成登录模块页面搭建，完成登录模块功能并连接至mysql<br>
+
+            2023/10/3 搬运游戏，修改页面表现，添加背景图片更换功能<br>
+
+            2023/10/1 添加贪吃蛇小游戏至下载列表<br>
+
+            2023/9/28 添加用户名；添加导航按钮；页面布局小修；添加更新日志<br>
+
+            2023/9/26 页面布局大修<br>
+
+            2023/9/25 上传/下载功能完善<br>
+            
+            2023/9/24 页面初建；加入文字上传功能
+        </a>
+    <div style="width: 2000px;
+    height: 1200px;
+    background-color: rgb(238, 0, 255,0.5);
+    border-radius: 50%;
+    margin: 20px auto;
+    position: fixed;
+    left: 0%;
+    transform: translate(-50%,-50%);
+    
+    z-index: -1;">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var container = document.body;
+            var numCircles = 10; // 要生成的动画圆数量
+
+            for (var i = 0; i < numCircles; i++) {
+                var circle = document.createElement('div');
+                circle.className = 'animated-circle';
+                circle.style.left = Math.random() *95 + 'vw'; // 随机X轴坐标
+                circle.style.top = window.innerHeight - circle.offsetHeight + 'px';
+                circle.style.animationDelay = Math.random() * 5 + 's'; // 随机延迟时间
+                container.appendChild(circle);
+            }
+        });
+    </script>
+</body>
+</html>
